@@ -1,0 +1,73 @@
+<div class="row">                                                                      
+    <!-- page title Start-->
+    <div class="">
+        <div class="col-lg-12">
+            <h1>Dashboard</h1>
+        </div>
+    </div>	
+    <!-- page title END-->
+    <!-- page content END -->
+    <div class="">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading"><span class="glyphicon glyphicon-user"></span>User Details</div>
+                <div class="panel-body revenue-height">
+                    <!-- dashboard info box start -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="dash-info-box">
+                                <ul>
+                                    <li class="title-box">Full Name</li>
+                                    <li class="dyn-value">{{personDetail.data.ldapData[0].cn}}</li>                                                 
+                                </ul>
+                            </div>
+                            <div class="dash-info-box">
+                                <ul>
+                                    <li class="title-box">Employee Type</li>
+                                    <li class="dyn-value">{{personDetail.data.ldapData[0].employeetype}}</li>
+
+                                </ul>
+
+                            </div>
+                            <div class="dash-info-box">
+                                <ul>
+                                    <li class="title-box">Manager</li>
+                                    <li class="dyn-value">{{personDetail.data.ldapData[0].manager}}</li>
+
+                                </ul>
+                            </div>
+                            <div class="dash-info-box">
+                                <ul>
+                                    <li class="title-box">Total Nuid Count </li>
+                                    <li class="dyn-value">{{personDetail.data.nuidCount}}</li>
+
+                                </ul>
+                            </div>
+                            <div class="dash-info-box">
+                                <ul>
+                                    <li class="title-box">Total Owner Count</li>
+                                    <li class="dyn-value">{{personDetail.data.ownerCnt}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>	
+                    <!-- dashboard info box start -->
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading"><span class="glyphicon glyphicon-envelope"></span>Some Message</div>
+                <div class="panel-body revenue-height">
+                  <!--  some message here -->
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- page content end -->
+</div>

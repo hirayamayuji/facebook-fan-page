@@ -1,0 +1,54 @@
+ <script type="text/javascript">$(document).ready(function () {$("#jqxcheckbox-panel").hide();$("#jqxdropdownlist-panel").hide();});</script>
+<div class="row">
+	<div class="box-content">
+	    <!-- page title Start-->
+	    <div class="row">
+	    	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<div class="search-panel" id="jqxinputbox-panel">
+					<ul>			
+						<li><span>ID/Name:</span></li>
+						<li><input type="text" class="form-control" ng-keyUp="inputedUserIDAndUserName()" ng-model="inputedValue" type="text" placeholder="UserID-UserName"/><div id="search"></div></li>
+					</ul>
+				</div>
+			</div>
+	        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+		        	
+		        	<div class="search-panel" id="jqxcheckbox-panel">
+		        		<ul>			
+		        			<li><span>Option :</span></li>
+		        			<li style="margin-top: 8px;"><div id='jqxcheckbox-container'><div id="jqxcheckbox"></div></div></li>
+		        		</ul>
+		        	</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+					<div class="search-panel" id="jqxdropdownlist-panel">
+		        		<ul>			
+		        			<li><span>Owners:</span></li>
+		        			<li><div id="jqxdropdownlist-container"><div id="jqxdropdownlist"></div></div></li>
+		        		</ul>
+		        	</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<div class="search-panel" id="submitBtn-panel">
+					<ul>			
+						<li><span>Search:</span></li>
+						<li><div id="jqxbutton-container"><input ng-click="submit()" class="btn btn-default" type="button" value="Submit" id='jqxbutton' /></div></li>
+					</ul>
+				</div>
+			</div>
+	    </div>	
+	    <!-- page title END-->
+	    <!-- page content Start-->
+	    <div class="row">
+	        <div class="col-sm-12">
+	            <div class="panel panel-default">
+	                <div class="panel-heading"><i class="fa fa-refresh"></i>Users Informat</div>
+	                <div class="panel-body revenue-height" id="treeGrid-panel">
+	                    <div id="treeGrid"></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- page content  END -->
+	</div>
+</div>
